@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="830576b0-16d4-46c9-a5b2-c6ef70e4f29e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Ejercicio 2/Ejercicio 2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejercicio 2/src/Piola Gato.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejercicio 3/Ejercicio 3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejercicio 3/src/boton-verde-volver.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejercicio 4/Ejercicio 4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejercicio 4/src/boton-verde-volver.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conversor de unidades/Conversos de unidades.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Operaciones matemáticas/Operaciones matemáticas.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,29 +21,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Ejercicio 2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ejercicio 2/Ejercicio 2.html">
+      <file leaf-file-name="Conversos de unidades.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Conversor de unidades/Conversos de unidades.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+            <state relative-caret-position="221">
+              <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ejercicio 3.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ejercicio 3/Ejercicio 3.html">
+      <file leaf-file-name="Operaciones matemáticas.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Operaciones matemáticas/Operaciones matemáticas.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ejercicio 4.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Ejercicio 4/Ejercicio 4.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+            <state relative-caret-position="136">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -71,6 +58,8 @@
         <option value="$PROJECT_DIR$/Ejercicio 3/Ejercicio 3.html" />
         <option value="$PROJECT_DIR$/Ejercicio 2/Ejercicio 2.html" />
         <option value="$PROJECT_DIR$/Ejercicio 4/Ejercicio 4.html" />
+        <option value="$PROJECT_DIR$/Conversor de unidades/Conversos de unidades.html" />
+        <option value="$PROJECT_DIR$/Operaciones matemáticas/Operaciones matemáticas.html" />
       </list>
     </option>
   </component>
@@ -80,8 +69,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -101,6 +90,11 @@
             <path>
               <item name="ejercicios2018-FrancoBobadilla" type="b2602c69:ProjectViewProjectNode" />
               <item name="ejercicios2018-FrancoBobadilla" type="462c0819:PsiDirectoryNode" />
+              <item name="Conversor de unidades" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ejercicios2018-FrancoBobadilla" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ejercicios2018-FrancoBobadilla" type="462c0819:PsiDirectoryNode" />
               <item name="Ejercicio 2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -130,6 +124,11 @@
               <item name="ejercicios2018-FrancoBobadilla" type="462c0819:PsiDirectoryNode" />
               <item name="Ejercicio 4" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ejercicios2018-FrancoBobadilla" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ejercicios2018-FrancoBobadilla" type="462c0819:PsiDirectoryNode" />
+              <item name="Operaciones matemáticas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ejercicios2018-FrancoBobadilla" type="b2602c69:ProjectViewProjectNode" />
@@ -250,18 +249,19 @@
       <updated>1523465046810</updated>
       <workItem from="1523465050164" duration="1048000" />
       <workItem from="1523540546326" duration="2619000" />
+      <workItem from="1524069014622" duration="2070000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3667000" />
+    <option name="totallyTimeSpent" value="5737000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-7" y="0" width="697" height="735" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.43854326" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
@@ -270,10 +270,10 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
@@ -285,6 +285,27 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Ejercicio 2/Ejercicio 2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ejercicio 3/Ejercicio 3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ejercicio 4/Ejercicio 4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PrimerHTML/Index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -307,21 +328,38 @@
     <entry file="file://$PROJECT_DIR$/Ejercicio 3/Ejercicio 3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Ejercicio 2/Ejercicio 2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+        <state relative-caret-position="306">
+          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Ejercicio 2/src/Piola Gato.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Ejercicio 4/Ejercicio 4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+        <state relative-caret-position="788">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conversor de unidades/Conversos de unidades.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operaciones matemáticas/Operaciones matemáticas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
         </state>
       </provider>
     </entry>
