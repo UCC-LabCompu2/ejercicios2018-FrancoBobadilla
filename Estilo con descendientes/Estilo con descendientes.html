@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Estilo con descendientes</title>
+    <style>
+        .listaCirculos {
+            list-style-type: circle;
+        }
+
+        .listaCuadrados li {
+            list-style-type: square;
+            color: green;
+        }
+
+        #listaGriega {
+            list-style-type: lower-greek;
+        }
+
+        .listaRomana {
+            list-style-type: upper-roman;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<ul class="listaCirculos">
+    <li>elemnto 1</li>
+    <li>elemnto 2</li>
+</ul>
+
+<ul class="listaCuadrados">
+    <li>uno</li>
+    <li>dos</li>
+    <li>tres</li>
+</ul>
+
+<p class="listaCuadrados">Hola mundo</p>
+
+<ol id="listaGriega">
+    <li>item 1</li>
+    <li>item 2</li>
+</ol>
+
+<ol class="listaRomana">
+    <li>una cosa</li>
+    <li>otra cosa</li>
+</ol>
+
+<p class="listaRomana">Chau mundo</p>
+
+</body>
+</html>
