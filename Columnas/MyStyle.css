@@ -1,0 +1,21 @@
+body, .sidebar, .main {
+    background-color: lightgray;
+}
+.sidebar, .main{
+    height: 200px;
+}
+div{
+    margin:0 10px;
+}
+.wrap{
+    background-color: white;
+    height: 300px;
+}
+.sidebar{
+    float: left;
+    overflow: auto;
+}
+.main{
+    margin-left: 230px;
+    overflow: auto;
+}
