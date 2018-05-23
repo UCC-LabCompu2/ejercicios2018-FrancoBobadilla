@@ -14,9 +14,9 @@
 <body>
 <canvas id="myCanvas" width="480" height="320"></canvas>
 <script>
-    var canvas = document.getElementById("myCanvas");
-    var ctx = canvas.getContext("2d");
-    var barra = {
+    let canvas = document.getElementById("myCanvas");
+    let ctx = canvas.getContext("2d");
+    let barra = {
         x: (canvas.width / 2) - (80 / 2),
         y: canvas.height - 30,
         ancho: 80,
@@ -30,7 +30,7 @@
             ctx.closePath();
         }
     };
-    var bolita = {
+    let bolita = {
 
         x: (canvas.width / 2) - (15 / 2),
         y: canvas.height - 50,
@@ -44,15 +44,15 @@
             ctx.closePath();
         }
     };
-    var bloques = {
+    let bloques = {
         contenido: [],
         columnas: 5,
         filas: 3,
         margenTop: 30,
         margenLeft: 30,
         init: function () {
-            for (var f = 0; f < this.filas; f++) {
-                for (var c = 0; c < this.columnas; c++) {
+            for (let f = 0; f < this.filas; f++) {
+                for (let c = 0; c < this.columnas; c++) {
                     this.contenido.push(
                         {
                             x: this.margenLeft + c * 75,
