@@ -14,14 +14,50 @@
 <body>
 <canvas id="myCanvas" width="480" height="320"></canvas>
 <script>
+
     let canvas = document.getElementById("myCanvas");
+
+
     let ctx = canvas.getContext("2d");
+
+    var dx = 2;
+    var dy = -2;
+
+    var derechaPresionada = false;
+    var izquierdaPresionada = false;
+
+    document.addEventListener("keydown", keyDownHandler, false);
+    document.addEventListener("keyup", keyUpHandler, false);
+
+    function keyDownHandler(e) {
+        //console.log(e.keyCode);
+        if(e.keyCode == 39){
+            derechaPresionada = true;
+        }
+
+        if(e.keyCode == 37){
+            izquierdaPresionada = true;
+        }
+
+    }
+
+    function keyUpHandler(e) {
+        if(e.keyCode == 39){
+            derechaPresionada = false;
+        }
+
+        if(e.keyCode == 37){
+            izquierdaPresionada = false;
+        }
+    }
+
     let barra = {
         x: (canvas.width / 2) - (80 / 2),
         y: canvas.height - 30,
         ancho: 80,
         alto: 15,
         color: '#0ad',
+
         dibujar: function () {
             ctx.beginPath();
             ctx.rect(this.x, this.y, this.ancho, this.alto);
@@ -30,12 +66,14 @@
             ctx.closePath();
         }
     };
-    let bolita = {
 
+
+    let bolita = {
         x: (canvas.width / 2) - (15 / 2),
         y: canvas.height - 50,
         radio: 15,
         color: '#d0a',
+
         dibujar: function () {
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.radio, 0, Math.PI * 2);
@@ -44,12 +82,15 @@
             ctx.closePath();
         }
     };
+
+
     let bloques = {
         contenido: [],
         columnas: 5,
         filas: 3,
         margenTop: 30,
         margenLeft: 30,
+
         init: function () {
             for (let f = 0; f < this.filas; f++) {
                 for (let c = 0; c < this.columnas; c++) {
@@ -63,6 +104,7 @@
                 }
             }
         },
+
         dibujar: function () {
             for (bloque of this.contenido) {
                 ctx.beginPath();
@@ -73,10 +115,51 @@
             }
         }
     };
+
+
     bloques.init();
     bolita.dibujar();
     barra.dibujar();
     bloques.dibujar();
+
+    function  dibujarJuego() {
+        ctx.clearRect(0,0, canvas.width, canvas.height);
+
+        if(bolita.y-bolita.radio < 0){
+            dy = -dy;
+        }
+
+        if(bolita.y+bolita.radio > canvas.height){
+            dy = -dy;
+        }
+
+        if(bolita.x+bolita.radio > canvas.width){
+            dx = -dx;
+        }
+
+        if(bolita.x-bolita.radio <0){
+            dx = -dx;
+        }
+
+        if(derechaPresionada && barra.x+barra.ancho < canvas.width){
+            barra.x += dx;
+        }
+
+        if(izquierdaPresionada && barra.x > 0){
+            barra.x -= dx;
+        }
+
+        if(bolita.y )
+
+        bolita.dibujar();
+        barra.dibujar();
+
+        bolita.x += dx;
+        bolita.y += dy;
+    }
+
+    setInterval(dibujarJuego, 15);
+
 </script>
 </body>
 </html>
