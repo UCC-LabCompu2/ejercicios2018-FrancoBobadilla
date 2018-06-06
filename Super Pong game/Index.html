@@ -57,6 +57,7 @@
         ancho: 80,
         alto: 15,
         color: '#0ad',
+        velX: 2,
 
         dibujar: function () {
             ctx.beginPath();
@@ -73,6 +74,8 @@
         y: canvas.height - 50,
         radio: 15,
         color: '#d0a',
+        velX: 3,
+        velY: -3,
 
         dibujar: function () {
             ctx.beginPath();
@@ -107,14 +110,29 @@
 
         dibujar: function () {
             for (bloque of this.contenido) {
-                ctx.beginPath();
-                ctx.rect(bloque.x, bloque.y, 70, 18);
-                ctx.fillStyle = '#259';
-                ctx.fill();
-                ctx.closePath();
+                if(bloque.existe){
+                    ctx.beginPath();
+                    ctx.rect(bloque.x, bloque.y, 70, 18);
+                    ctx.fillStyle = '#259';
+                    ctx.fill();
+                    ctx.closePath();
+                }
+
             }
         }
     };
+
+    function detectarColision(){
+        for(b of bloques.contenido){
+            if(b.existe){
+                if(bolita.x > b.x && bolita.x < b.x+bloques.ancho &&
+                bolita.y > b.y && bolita.y < b.y+bloques.alto){
+                    bolita.velY = -bolita.velY;
+                    b.existe = false;
+                }
+            }
+        }
+    }
 
 
     bloques.init();
@@ -125,37 +143,42 @@
     function  dibujarJuego() {
         ctx.clearRect(0,0, canvas.width, canvas.height);
 
-        if(bolita.y-bolita.radio < 0){
-            dy = -dy;
+        if(bolita.y-bolita.radio < 0){ //Rebota Arriba
+            bolita.velY = -bolita.velY;
         }
 
-        if(bolita.y+bolita.radio > canvas.height){
-            dy = -dy;
+        if(bolita.y+bolita.radio > canvas.height){ //Rebota Abajo
+            if(bolita.x > barra.x && bolita.x < barra.x+barra.ancho){
+                bolita.velY = -bolita.velY;
+            }
+            else{
+                alert("Game Over!");}
         }
 
-        if(bolita.x+bolita.radio > canvas.width){
-            dx = -dx;
+        if(bolita.x+bolita.radio > canvas.width){ // Rebota Derecha
+            bolita.velX = -bolita.velX;
         }
 
-        if(bolita.x-bolita.radio <0){
-            dx = -dx;
+        if(bolita.x-bolita.radio <0){ // Rebota Izquierda
+            bolita.velX = -bolita.velX;
         }
 
-        if(derechaPresionada && barra.x+barra.ancho < canvas.width){
-            barra.x += dx;
+        if(derechaPresionada && barra.x+barra.ancho < canvas.width){ //Mueve derecha
+            barra.x += barra.velX;
         }
 
-        if(izquierdaPresionada && barra.x > 0){
-            barra.x -= dx;
+        if(izquierdaPresionada && barra.x > 0){ //Mueve Izquierda
+            barra.x -= barra.velX;
         }
-
-        if(bolita.y )
+        detectarColision();
 
         bolita.dibujar();
         barra.dibujar();
 
-        bolita.x += dx;
-        bolita.y += dy;
+        bloques.dibujar();
+
+        bolita.x += bolita.velX;
+        bolita.y += bolita.velY;
     }
 
     setInterval(dibujarJuego, 15);
